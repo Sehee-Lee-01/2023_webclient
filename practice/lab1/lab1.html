@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>lab1</title>
+    </head>
+    <body>
+        <h1>배정시간표 작성하기</h1>
+        <table>
+            <caption>자바스크립트 프로그래밍 헬퍼 배정시간</caption>
+            <colgroup>
+                <col style="background-color:#eee;">
+                <col>
+                <col span="2" style="width:150px">
+                <!-- span 속성을 사용해 합치기 전
+                <col style="width:150px">
+                <col style="width:150px">
+                -->
+              </colgroup>
+            <thead>
+                <tr>
+                    <th>요일/시간</th>
+                    <th>2-3교시</th>
+                    <th>4-5교시</th>
+                    <th>6-7교시</th>
+                    <th>8-9교시</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">월-화요일</td>
+                    <td colspan="2">윤선영</td>
+                    <td rowspan="2">홍길동</td>
+                    <td rowspan="5">
+                        <video src="medias/salad.mp4" controls width="200"></video>
+                        <br>배정없음<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">박영수</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">수-목요일</td>
+                    <td rowspan="2">한나라</td>
+                    <td rowspan="2">민영식</td>
+                    <td>박영수</td>
+                </tr>
+                <tr>
+                    <td>윤선영</td>
+                </tr>
+                <tr>
+                    <td>금요일</td>
+                    <td colspan="3">김철수</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>수강과목 신청하기</h1>
+        <form>
+            <fieldset>
+                <legend>수강과목 선택</legend>
+                <p><b>웹클라이언트컴퓨팅 분반 선택</b></p>
+                <ul>
+                    <li><label><input type="radio">1분반</label></li>
+                    <li><label><input type="radio">2분반</label></li>
+                    <li><label><input type="radio">3분반</label></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>학생 정보</legend>
+                <ul>
+                    <li><label>이름<input type="text"></label></li>
+                    <li><label>이메일<input type="email"></label></li>
+                    <li><label>신청일시<input type="datetime-local"></label></li>
+                    <li>메모<textarea></textarea></li>
+                </ul>
+            </fieldset>
+            <input type="submit" value="신청하기">
+            <input type="reset" value="취소하기">
+        </form>
+    </body>
+</html>
